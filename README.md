@@ -16,7 +16,6 @@ The Freelance Project Tracker is a command-line interface (CLI) application buil
 ## Installation
 
 1. Clone the repository:
-   ```bash
    git clone https://github.com/yourusername/freelance-project-tracker.git
    cd freelance-project-tracker
 
@@ -29,10 +28,12 @@ The Freelance Project Tracker is a command-line interface (CLI) application buil
     pipenv run python lib/db/setup.py
 
 4. Seed the database with sample data:
-    
     pipenv run python scripts/seed_data.py
 
-5. Start the CLI app:
+5. Ensure database tables are created
+    pipenv run python -m lib.db.setup
+
+6. Start the CLI app:
 
     pipenv run python run.py
 
