@@ -14,4 +14,4 @@ class Invoice(Base):
     project = relationship('Project', back_populates='invoices')
 
     def __repr__(self):
-        return f"<Invoice(amount={self.amount}, status={self.status})>"
+      return f"<Invoice(amount={self.amount}, status={self.status})>"
